@@ -27,12 +27,6 @@ Portafolio interactivo que compara 13 modelos de IA generativa de frontera (Clau
 - 5 conclusiones argumentadas
 - 10 referencias verificables
 
-## Despliegue
-
-Este portafolio es un único archivo `index.html` autocontenido (sin dependencias externas excepto Google Fonts). Para desplegarlo:
-
-1. Activar GitHub Pages en Settings → Pages → Source: main branch
-2. El archivo `index.html` se servirá automáticamente
 
 ## Tecnologías
 
