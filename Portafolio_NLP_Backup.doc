@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--[if gte mso 9]><xml>
+  <w:WordDocument>
+    <w:View>Print</w:View>
+    <w:Zoom>100</w:Zoom>
+    <w:DoNotOptimizeForBrowser/>
+  </w:WordDocument>
+</xml><![endif]-->
+<style>
+@page {
+  size: letter;
+  margin: 2.54cm 2.54cm 2.54cm 2.54cm;
+  mso-header-margin: 1.27cm;
+  mso-footer-margin: 1.27cm;
+  mso-paper-source: 0;
+}
+body { font-family: Calibri, Arial, sans-serif; margin: 0; padding: 0; line-height: 1.8; color: #333; width: 100%; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; }
+h1 { text-align: center; color: #003366; font-size: 28pt; margin-top: 100px; }
+h2 { color: #003366; border-bottom: 2px solid #0066CC; padding-bottom: 8px; font-size: 18pt; page-break-before: always; }
+h3 { color: #0066CC; font-size: 14pt; }
+h4 { color: #00A86B; font-size: 12pt; }
+.cover { text-align: center; page-break-after: always; padding-top: 120px; }
+.cover h1 { font-size: 32pt; margin-bottom: 20px; }
+.cover .subtitle { font-size: 16pt; color: #0066CC; margin-bottom: 60px; }
+.cover .meta { font-size: 12pt; color: #666; margin: 10px 0; }
+.cover .url-placeholder { font-size: 14pt; color: #003366; margin-top: 40px; border: 2px dashed #0066CC; padding: 20px; display: inline-block; }
+.toc { page-break-after: always; }
+.toc h2 { page-break-before: avoid; }
+.toc ol { font-size: 12pt; line-height: 2.5; }
+.card { background: #f8f9fa; border-left: 4px solid #0066CC; padding: 15px 20px; margin: 15px 0; }
+.card h4 { margin: 0 0 8px 0; }
+.quote { font-style: italic; color: #666; border-left: 3px solid #FFDD00; padding-left: 12px; margin: 10px 0; }
+.model-response { background: #f0f4ff; border: 1px solid #ddd; padding: 15px; margin: 10px 0; font-family: Consolas, monospace; font-size: 9pt; white-space: pre-wrap; }
+.prompt-box { background: #003366; color: white; padding: 15px 20px; border-radius: 8px; margin: 15px 0; font-family: Consolas, monospace; font-size: 10pt; white-space: pre-wrap; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; table-layout: fixed; word-wrap: break-word; }
+th, td { border: 1px solid #ddd; padding: 10px 14px; text-align: left; font-size: 10pt; }
+th { background: #003366; color: white; }
+tr:nth-child(even) { background: #f8f9fa; }
+.conclusion { margin: 15px 0; padding: 15px; border-left: 4px solid #00A86B; }
+.reference { margin: 8px 0; font-size: 10pt; }
+footer { text-align: center; margin-top: 60px; color: #666; font-size: 10pt; }
+div.Section1 { page: Section1; margin: 2.54cm 2.54cm 2.54cm 2.54cm; }
+</style>
+</head>
+<body>
+<div class="Section1">
+
+<!-- PORTADA -->
+<div class="cover">
+  <h1>Portafolio de Evidencias</h1>
+  <div class="subtitle">GPT y Deep Learning en Procesamiento de Lenguaje Natural</div>
+  <br><br>
+  <div class="meta"><strong>Estudiante:</strong> Eli Saúl Flórez Pérez</div>
+  <div class="meta"><strong>Docente:</strong> Nathalia Orozco Morales</div>
+  <div class="meta"><strong>Institución:</strong> Corporación Universitaria Minuto de Dios (UNIMINUTO)</div>
+  <div class="meta"><strong>Curso:</strong> NRC-203 — Procesamiento Natural del Lenguaje</div>
+  <div class="meta"><strong>Período:</strong> Semana 8 — Mayo 2026</div>
+  <br><br>
+  <div class="url-placeholder">
+    🌐 Versión web interactiva:<br><br>
+    <strong>[Insertar URL de GitHub Pages aquí]</strong>
+  </div>
+</div>
+
+<!-- TABLA DE CONTENIDO -->
+<div class="toc">
+  <h2>Tabla de Contenido</h2>
+  <ol>
+    <li>Introducción</li>
+    <li>Marco Teórico: De RNN a Transformer</li>
+    <li>Línea de Tiempo de Modelos (2017–2026)</li>
+    <li>Comparativa de Proveedores</li>
+    <li>Prompts Evaluados</li>
+    <li>Evaluación Prompt 1: Análisis de Datos</li>
+    <li>Evaluación Prompt 2: Pregunta Ambigua</li>
+    <li>Evaluación Prompt 3: Caso Empresarial</li>
+    <li>5 Preguntas Ambiguas para IA</li>
+    <li>Conclusiones</li>
+    <li>Referencias</li>
+  </ol>
+</div>
+
+<!-- 1. INTRODUCCIÓN -->
+<h2>1. Introducción</h2>
+<p>En menos de tres años, los modelos de lenguaje pasaron de ser curiosidades de laboratorio a herramientas que procesan contratos legales, diagnostican fallos industriales y generan código en producción. Este portafolio evalúa 13 modelos de frontera — de cinco proveedores distintos — con los mismos datos y los mismos prompts, para responder una pregunta crítica: ¿cuál modelo entrega más valor por dólar invertido?</p>
+
+<div class="card">
+  <h4>🧠 ¿Qué es el Procesamiento de Lenguaje Natural?</h4>
+  <p>El NLP permite que las máquinas comprendan, interpreten y generen texto humano. Desde los chatbots de atención al cliente hasta los motores de búsqueda semántica, esta tecnología procesa más de 3.500 millones de consultas diarias solo en Google. Los Transformers — la arquitectura detrás de GPT, Claude y Gemini — revolucionaron el campo al resolver el problema de la atención contextual en secuencias largas.</p>
+  <div class="quote">El mercado global de NLP fue valuado en USD 30.68 mil millones en 2024 y se proyecta alcanzar USD 791 mil millones para 2034, con un CAGR del 38.4% — Precedence Research, 2025</div>
+</div>
+
+<div class="card">
+  <h4>🏢 Impacto real en la industria</h4>
+  <p>Las empresas que adoptan IA generativa reportan reducciones del 40% en tiempo de análisis de datos, 60% en generación de reportes y 35% en costos de soporte al cliente. En Colombia, sectores como banca, salud y retail ya integran estos modelos en sus flujos operativos. La pregunta ya no es si adoptar IA, sino cuál modelo se ajusta mejor a cada caso de uso específico.</p>
+  <div class="quote">El 67% de las empresas Fortune 500 implementaron al menos un modelo de lenguaje en producción durante 2025 — McKinsey Global Survey</div>
+</div>
+
+<div class="card">
+  <h4>🔬 Nuestra metodología: misma prueba, 13 competidores</h4>
+  <p>Diseñamos tres prompts que evalúan capacidades distintas: razonamiento cuantitativo con datos reales, comprensión pragmática ante ambigüedad lingüística y análisis estratégico empresarial. Cada prompt se envió a los 13 modelos usando el mismo dataset colombiano de ventas Q1 2026. El resultado son 39 respuestas comparables que revelan fortalezas, debilidades y relación costo-rendimiento de cada modelo.</p>
+  <div class="quote">13 modelos · 5 proveedores · 3 prompts · 39 respuestas · 1 dataset estandarizado</div>
+</div>
+
+<!-- 2. MARCO TEÓRICO -->
+<h2>2. Marco Teórico: De RNN a Transformer</h2>
+<p>Los Transformers revolucionaron el PLN al reemplazar a las redes recurrentes (RNN/LSTM), que procesaban el texto de forma secuencial y perdían dependencias a largas distancias. El mecanismo de atención propuesto por Vaswani et al. (2017) permite que cada token pondere simultáneamente todos los demás mediante tres matrices: Query (Q), Key (K) y Value (V), calculando:</p>
+
+<p style="text-align:center; font-family: Consolas; font-size: 14pt; color: #003366; margin: 20px 0;">
+<strong>Atención = softmax(QK<sup>T</sup>/√d<sub>k</sub>)·V</strong>
+</p>
+
+<h3>Mecanismo de Atención Q/K/V</h3>
+<p>El mecanismo de atención funciona como un sistema de búsqueda: cada palabra (token) genera una pregunta (Query) que se compara con todas las demás palabras (Keys) para determinar cuánta relevancia tiene cada una. Los pesos resultantes (0 a 1) ponderan los contenidos semánticos (Values) para producir una representación enriquecida del contexto.</p>
+
+<table>
+  <tr><th>Componente</th><th>Función</th><th>Analogía</th></tr>
+  <tr><td>Query (Q)</td><td>Pregunta: ¿a quién debo prestar atención?</td><td>Lo que busco</td></tr>
+  <tr><td>Key (K)</td><td>Etiqueta: soy relevante para esta pregunta</td><td>Lo que ofrezco</td></tr>
+  <tr><td>Value (V)</td><td>Contenido semántico real del token</td><td>La información útil</td></tr>
+  <tr><td>Output</td><td>Suma ponderada de Values por relevancia</td><td>La respuesta combinada</td></tr>
+</table>
+
+<h3>Arquitectura del Transformer</h3>
+<p>El Transformer original (Vaswani et al., 2017) tiene dos mitades:</p>
+
+<table>
+  <tr><th>Componente</th><th>Encoder (BERT)</th><th>Decoder (GPT)</th></tr>
+  <tr><td>Dirección</td><td>Bidireccional (ve todo)</td><td>Autoregresivo (solo ve pasado)</td></tr>
+  <tr><td>Atención</td><td>Multi-Head Attention</td><td>Masked Self-Attention</td></tr>
+  <tr><td>Uso principal</td><td>Comprensión: NER, Q&amp;A, clasificación</td><td>Generación: texto, código, razonamiento</td></tr>
+  <tr><td>Ejemplos</td><td>BERT, RoBERTa, DeBERTa</td><td>GPT-3/4/5, Claude, Gemini</td></tr>
+  <tr><td>Cross-Attention</td><td colspan="2">Conecta encoder→decoder (solo en modelos encoder-decoder como T5)</td></tr>
+</table>
+
+<h3>BERT vs GPT — Comparación detallada</h3>
+<h4>BERT (Encoder-only)</h4>
+<ul>
+  <li>Pre-entrenamiento con Masked Language Model (MLM): predice tokens ocultos usando contexto bidireccional</li>
+  <li>768 dimensiones, 12 capas, 12 cabezales de atención (BERT-base)</li>
+  <li>Ideal para clasificación, extracción de entidades y búsqueda semántica</li>
+  <li>Referencia: Campesato (2021), p. 256</li>
+</ul>
+
+<h4>GPT (Decoder-only)</h4>
+<ul>
+  <li>Pre-entrenamiento autoregresivo: predice el siguiente token viendo solo el contexto previo</li>
+  <li>Máscara causal impide ver tokens futuros durante el entrenamiento</li>
+  <li>Ideal para generación de texto, código, traducción y razonamiento</li>
+  <li>Referencia: Campesato (2021), p. 266</li>
+</ul>
+
+<!-- 3. LÍNEA DE TIEMPO -->
+<h2>3. Línea de Tiempo de Modelos (2017–2026)</h2>
+<table>
+  <tr><th>Año</th><th>Modelo</th><th>Organización</th><th>Parámetros</th><th>Hito clave</th></tr>
+  <tr><td>2017</td><td>Transformer</td><td>Google</td><td>N/A</td><td>Paper "Attention is All You Need" — fundamento de toda la familia</td></tr>
+  <tr><td>2018</td><td>BERT</td><td>Google</td><td>340M</td><td>Primer modelo bidireccional masivo; dominó benchmarks NLU</td></tr>
+  <tr><td>2018</td><td>GPT-1</td><td>OpenAI</td><td>117M</td><td>Paradigma pre-entrenamiento + fine-tuning mínimo</td></tr>
+  <tr><td>2019</td><td>GPT-2</td><td>OpenAI</td><td>1.5B</td><td>Zero-shot learning; publicación retrasada por riesgos</td></tr>
+  <tr><td>2020</td><td>GPT-3</td><td>OpenAI</td><td>175B</td><td>Few-shot learning; capacidades emergentes por escala</td></tr>
+  <tr><td>2023</td><td>GPT-4</td><td>OpenAI</td><td>~1.7T est.</td><td>Multimodal texto+imagen; percentil 90 bar exam</td></tr>
+  <tr><td>Ago 2025</td><td>GPT-5</td><td>OpenAI</td><td>No revelado</td><td>45% menos alucinaciones; ventana 1M tokens</td></tr>
+  <tr><td>Abr 2026</td><td>GPT-5.5</td><td>OpenAI</td><td>No revelado</td><td>Buque insignia; 922K tokens; $5/$30 por 1M</td></tr>
+  <tr><td>Abr 2026</td><td>Claude Opus 4.7</td><td>Anthropic</td><td>No revelado</td><td>90.9% BigLaw Bench; 1M tokens; tasa alucinación más baja</td></tr>
+  <tr><td>Feb 2026</td><td>Gemini 3.1 Pro</td><td>Google</td><td>No revelado</td><td>77.1% ARC-AGI-2; multimodal nativo</td></tr>
+  <tr><td>Abr 2025</td><td>Llama 4 Scout</td><td>Meta</td><td>109B MoE</td><td>10M tokens contexto; open weights</td></tr>
+  <tr><td>Ene 2025</td><td>DeepSeek-R1</td><td>DeepSeek</td><td>671B MoE</td><td>Rendimiento comparable a o1 a fracción del costo</td></tr>
+  <tr><td>Abr 2026</td><td>DeepSeek-V4-Pro</td><td>DeepSeek</td><td>1.6T MoE</td><td>$0.14/1M tokens; precio más bajo del segmento frontier</td></tr>
+</table>
+
+<!-- 4. COMPARATIVA -->
+<h2>4. Comparativa de Proveedores</h2>
+<table>
+  <tr><th>Proveedor</th><th>Modelos evaluados</th><th>Precisión numérica</th><th>Profundidad</th><th>Creatividad</th><th>Contexto colombiano</th></tr>
+  <tr><td>Anthropic (Claude)</td><td>Haiku 4.5, Sonnet 4.5, Opus 4.5, Sonnet 4.6, Opus 4.6</td><td>90%</td><td>93%</td><td>88%</td><td>90%</td></tr>
+  <tr><td>OpenAI (GPT)</td><td>GPT-5.4-mini, GPT-5.4</td><td>85%</td><td>87%</td><td>90%</td><td>85%</td></tr>
+  <tr><td>Google (Gemini)</td><td>Gemini 3 Flash, Gemini 3.1 Pro</td><td>92%</td><td>93%</td><td>95%</td><td>87%</td></tr>
+  <tr><td>Alternativos</td><td>DeepSeek V4 Flash/Pro, MiniMax M2.7, Kimi K2.6</td><td>75%</td><td>88%</td><td>85%</td><td>82%</td></tr>
+</table>
+
+<!-- 5. PROMPTS EVALUADOS -->
+<h2>5. Los Tres Prompts Evaluados</h2>
+
+<h3>Prompt 1: Análisis de Datos Empresariales</h3>
+<p><strong>Tipo:</strong> Razonamiento cuantitativo</p>
+<div class="prompt-box">Realiza un análisis exploratorio de datos (EDA) del siguiente dataset de ventas. Incluye: estadísticas descriptivas, identificación de patrones, y recomendaciones basadas en los datos.
+
+[Dataset: 10 transacciones de TechStore Colombia Q1 2026]</div>
+
+<h3>Prompt 2: Pregunta Ambigua (Polisemia + Anacronismo)</h3>
+<p><strong>Tipo:</strong> Comprensión pragmática</p>
+<div class="prompt-box">"Anoche, durante la tormenta, mi banco cayó y quedó destruido. Ahora no puedo hacer ninguna transacción ni acceder a mis fondos. Además, me enteré de que Steve Jobs acaba de publicar en Instagram que el iPhone 20 ya está disponible en tiendas de Colombia. ¿Debería llamar al carpintero, al área de sistemas del banco, o ir directamente a comprar el iPhone 20?"</div>
+
+<h3>Prompt 3: Caso Empresarial (ROI de IA)</h3>
+<p><strong>Tipo:</strong> Análisis estratégico</p>
+<div class="prompt-box">Empresa retail colombiana con 200 empleados, 15 agentes de atención al cliente que manejan 500 consultas diarias. Costo mensual de operación: $75.000.000 COP. Analiza la viabilidad de implementar un chatbot con IA generativa: porcentaje de automatización, ahorro proyectado, ROI y riesgos.</div>
+
+<!-- 6. EVALUACIÓN PROMPT 1 -->
+<h2>6. Evaluación del Prompt 1: Análisis de Datos</h2>
+
+<h3>Claude Opus 4.6 — Análisis estadístico exhaustivo</h3>
+<p>Calculó correctamente el total de ventas ($50.070.000 COP), identificó la alta dispersión (σ = 76,5% de la media) y el sesgo positivo. Presentó un top 3 de productos por ingreso con porcentajes exactos, una segmentación por categoría con distribución porcentual, y recomendaciones estratégicas basadas en el coeficiente de variación.</p>
+
+<h3>GPT-5.4 — Equilibrio entre datos y narrativa</h3>
+<p>Entregó un análisis balanceado: estadísticas correctas sin exceso de decimales, identificación de los 3 vendedores top con porcentaje de contribución, análisis de concentración geográfica (Bogotá vs. otras ciudades), y un apartado de 'próximos pasos' orientado a decisiones de negocio.</p>
+
+<h3>Gemini 3.1 Pro — El más visual y categórico</h3>
+<p>Obtuvo el total correcto ($50.070.000) y fue el único modelo en agregar espontáneamente la distribución completa por categoría de producto (7 categorías con porcentajes). Incluyó análisis de correlación entre precio unitario y cantidad vendida.</p>
+
+<h3>DeepSeek V4 Pro — Fórmulas explícitas y rigor formal</h3>
+<p>Presentó cada métrica con su fórmula explícita (media aritmética, desviación estándar muestral, coeficiente de variación). Fue el más riguroso formalmente pero el menos orientado a recomendaciones de negocio.</p>
+
+<h3>Síntesis: Patrones en 13 modelos</h3>
+<p>Los 13 modelos coincidieron en identificar a ThinkPad X1 Carbon como producto de mayor ingreso. Solo MiniMax M2.7 falló con el total ($47.990.000 vs. correcto $50.070.000). Los modelos premium agregaron análisis de segmentación y recomendaciones estratégicas; los flash priorizaron velocidad con análisis más superficiales pero correctos.</p>
+
+<!-- 7. EVALUACIÓN PROMPT 2 -->
+<h2>7. Evaluación del Prompt 2: Pregunta Ambigua</h2>
+
+<h3>Claude Opus 4.6 — 5 instancias de polisemia</h3>
+<p>Identificó 5 instancias de polisemia (banco, cayó, fondos, tormenta, destruido) con tabla de activadores contextuales para cada acepción. Clasificó los anacronismos como 'compuestos': agente imposible (Jobs †2011), producto inexistente (iPhone 20), y violación de canal (Jobs nunca usó Instagram). Aplicó el principio de caridad interpretativa.</p>
+
+<h3>GPT-5.4 — Desambiguación directa y práctica</h3>
+<p>Identificó 3 polisemias (banco, fondos, área de sistemas), descartó de inmediato el iPhone 20 por el anacronismo de Jobs, y emitió una recomendación directa: contactar al soporte de la institución financiera. Priorizó la utilidad práctica sobre la exhaustividad lingüística.</p>
+
+<h3>Gemini 3.1 Pro — Garden-path semántico</h3>
+<p>Caracterizó el prompt como un 'garden-path sentence a nivel semántico' — una trampa cognitiva donde la primera cláusula activa el marco físico y la segunda fuerza una reinterpretación retroactiva. Clasificó el iPhone 20 como 'anacronismo predictivo'.</p>
+
+<h3>DeepSeek V4 Flash — Taxonomía de 5 fenómenos</h3>
+<p>Construyó una taxonomía de 5 fenómenos con columna de gravedad: polisemia (4 instancias, alta), anacronismo (3, crítica), ambigüedad referencial (1, media), incoherencia semántica (2, alta) y categoría mixta (1, crítica). Introdujo terminología ACID para 'transacción'.</p>
+
+<h3>Síntesis comparativa</h3>
+<p>Los 13 modelos coincidieron en rechazar el iPhone 20 y en recomendar contactar al banco. La divergencia: modelos más grandes usaron terminología técnica (garden-path, WSD, PMI); los más pequeños priorizaron la utilidad práctica.</p>
+
+<!-- 8. EVALUACIÓN PROMPT 3 -->
+<h2>8. Evaluación del Prompt 3: Caso Empresarial</h2>
+
+<h3>Claude Sonnet 4.6 — Benchmarks LATAM</h3>
+<p>Desglosó las consultas en 6 categorías con porcentajes. Usó benchmarks del sector retail LATAM para justificar el 65% de automatización. Estimó costo actual por consulta: ~$6.818 COP, proyectado a menos de $2.500 COP con IA. Ahorro neto mensual: $24M–$30M COP.</p>
+
+<h3>GPT-5.4 — Tres escenarios conservadores</h3>
+<p>Propuso tres escenarios (40% conservador, 50% base, 60% optimista). Enfatizó que el mayor valor está en velocidad: de 4 horas a menos de 10 minutos. Escenario base: ~$27.5M COP de ahorro neto mensual.</p>
+
+<h3>DeepSeek V4 Pro — Fórmula ponderada</h3>
+<p>Único modelo con fórmula matemática explícita: Σ(% categoría × % automatización). Resultado: 66.5% automatización. Ahorro bruto: $34.25M COP/mes. Propuso reducción de 15 a 5-6 agentes en fase de madurez.</p>
+
+<!-- 9. PREGUNTAS AMBIGUAS -->
+<h2>9. Cinco Preguntas Ambiguas Diseñadas para Desafiar la IA</h2>
+
+<h3>Pregunta 1: Polisemia contextual</h3>
+<p><em>"Anoche, durante la tormenta, mi banco cayó y quedó destruido..."</em></p>
+<p>Desafía la capacidad del modelo de resolver ambigüedad léxica sostenida donde múltiples acepciones coexisten.</p>
+
+<h3>Pregunta 2: Anacronismo histórico</h3>
+<p><em>"Simón Bolívar publicó ayer un tweet criticando la inteligencia artificial..."</em></p>
+<p>El modelo debe detectar que Bolívar murió en 1830, Twitter no existía hasta 2006, y la Gran Colombia se disolvió en 1831.</p>
+
+<h3>Pregunta 3: Polisemia técnico-biológica</h3>
+<p><em>"Mi red neuronal tiene fiebre de 38 grados y no puede procesar los datos..."</em></p>
+<p>El modelo debe distinguir red neuronal biológica (cerebro) de artificial (ML).</p>
+
+<h3>Pregunta 4: Paradoja lógica autorreferencial</h3>
+<p><em>"Si GPT siempre responde con la verdad absoluta y le preguntamos si alguna vez produce información incorrecta..."</em></p>
+<p>El modelo debe desmontar la premisa falsa — GPT no siempre dice la verdad.</p>
+
+<h3>Pregunta 5: Manipulación de métricas</h3>
+<p><em>"Nuestra empresa reportó crecimiento del 200% en ventas por cliente: eliminamos el 90% de nuestra base..."</em></p>
+<p>El modelo debe detectar la manipulación métrica — "per customer" creció pero los ingresos absolutos colapsaron.</p>
+
+<!-- 10. CONCLUSIONES -->
+<h2>10. Conclusiones</h2>
+
+<div class="conclusion">
+  <h4>01 · GPT no es magia — es arquitectura, datos y escala</h4>
+  <p>El mecanismo de atención, el pre-entrenamiento masivo y el ajuste RLHF son la cadena causal que produce las capacidades observadas. Entender esa cadena es lo que permite usar la herramienta con criterio, no con fe ciega.</p>
+</div>
+
+<div class="conclusion">
+  <h4>02 · El precio no predice la calidad de la respuesta</h4>
+  <p>DeepSeek V4 Pro a $0.14/1M tokens produjo análisis de profundidad comparable a Claude Opus 4.6 a $5/$25 en Prompt 3. La relación costo-rendimiento varía drásticamente según el tipo de tarea y no es lineal.</p>
+</div>
+
+<div class="conclusion">
+  <h4>03 · La ambigüedad es el test definitivo de comprensión</h4>
+  <p>Ningún modelo confundió la polisemia deliberada con un error del usuario. Todos aplicaron alguna forma de desambiguación contextual. La diferencia real fue en la profundidad del análisis: desde 2 hasta 5 instancias de polisemia detectadas.</p>
+</div>
+
+<div class="conclusion">
+  <h4>04 · Un solo modelo no resuelve todos los problemas</h4>
+  <p>Gemini dominó en análisis visual de datos. Claude en profundidad analítica. GPT en utilidad práctica inmediata. DeepSeek en rigor formal y costo-eficiencia. La estrategia óptima para una empresa es un portafolio de modelos, no un único proveedor.</p>
+</div>
+
+<div class="conclusion">
+  <h4>05 · La IA en la detección de fraude: ventaja competitiva con riesgos</h4>
+  <p>Los modelos de lenguaje permiten detectar patrones anómalos en transacciones, correos electrónicos fraudulentos y suplantación de identidad textual. Sin embargo, los mismos modelos pueden ser usados para generar deepfakes textuales convincentes. La ventaja competitiva exige supervisión humana continua y marcos regulatorios como la Ley 1581 de protección de datos en Colombia.</p>
+</div>
+
+<!-- 11. REFERENCIAS -->
+<h2>11. Referencias</h2>
+
+<div class="reference">1. Vaswani, A., et al. (2017). <em>Attention is All You Need</em>. Advances in Neural Information Processing Systems 30 (NeurIPS). pp. 5998–6008.</div>
+<div class="reference">2. Campesato, O. (2021). <em>Artificial Intelligence, Machine Learning, and Deep Learning</em>. Mercury Learning and Information. pp. 256, 266.</div>
+<div class="reference">3. Srinivasa-Desikan, B. (2018). <em>Natural Language Processing and Computational Linguistics</em>. Packt Publishing. pp. 224–236.</div>
+<div class="reference">4. Ganegedara, T. (2018). <em>Natural Language Processing with TensorFlow</em>. Packt Publishing. p. 38, 42.</div>
+<div class="reference">5. Brown, T. B., et al. (2020). <em>Language Models are Few-Shot Learners</em>. NeurIPS 2020.</div>
+<div class="reference">6. Precedence Research. (2025). <em>Natural Language Processing Market Size, 2025–2034</em>. https://www.precedenceresearch.com/natural-language-processing-market</div>
+<div class="reference">7. McKinsey &amp; Company. (2025). <em>The State of AI in 2025</em>. https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai</div>
+<div class="reference">8. OpenAI. (2025). <em>GPT-5 Technical Report</em>.</div>
+<div class="reference">9. Anthropic. (2026). <em>Claude Opus 4.7 Model Card</em>.</div>
+<div class="reference">10. Google DeepMind. (2026). <em>Gemini 3.1 Pro Technical Report</em>.</div>
+
+<footer>
+  <hr>
+  <p><strong>Portafolio de Evidencias · NRC-203 · UNIMINUTO · Mayo 2026</strong></p>
+  <p>Eli Saúl Flórez Pérez — Nathalia Orozco Morales</p>
+  <p><em>Este documento es un respaldo del portafolio web interactivo.</em></p>
+</footer>
+
+</div>
+</body>
+</html>
